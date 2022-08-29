@@ -8,8 +8,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
-  const [data,setData]=useState({}) 
-    const [lieu, setLieu]= useState('')
+  const [data,setData] = useState({}) 
+    const [lieu, setLieu] = useState('')
     const api= `https://api.openweathermap.org/data/2.5/weather?q=${lieu}&appid=c5685a3c183e8d4ee998a0def75b3c94`
 
     //recuperation de donnees input apres avoir cliqué sur enter
@@ -68,7 +68,7 @@ function App() {
                   <label>vent</label> 
               </div>
               <div className='bourrasque'>
-                  {data.main ? <h3> {Math.round(data.wind.gust)}% </h3> : null}
+                  {data.main ? <h3> {Math.round(data.wind.gust)}KM/H </h3> : null}
                   <label>Bourrasque</label> 
               </div>
             </div>
